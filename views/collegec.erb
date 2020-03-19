@@ -1,0 +1,5 @@
+<h4> Please select one class below: </h4>
+<% @collclass.each do |c| %>
+
+    <p><%=c.name %> <a href="/collclass/<%= c.id %>"> Show class info </a></p>
+<%end%>

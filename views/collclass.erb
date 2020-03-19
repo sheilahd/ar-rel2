@@ -1,0 +1,13 @@
+<h4> Class ID: <%=@collclass.id %></h4>
+<h4> Class name: <%=@collclass.name %></h4>
+<h4> Instructor: <%=@collclass.instructor %></h4>
+
+<h4>Students enrolled: </h4>
+
+
+<ul>
+    <% c_c = @collclass.students %>
+    <% c_c.each do |c| %>
+        <li><%= c.name %></li>
+    <%end%>
+</ul>

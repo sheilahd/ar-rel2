@@ -1,0 +1,5 @@
+<h4> Please select one student below: </h4>
+<% @students.each do |s| %>
+
+    <p><%=s.name %> <a href="/student/<%= s.id %>"> Show info </a></p>
+<%end%>
